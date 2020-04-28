@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#1BA261</color>
+    <color name="colorPrimaryDark">#1F8456</color>
+    <color name="colorAccent">#1BA261</color>
+
+    <!--Custom colors-->
+    <color name="white_no_flash">#F2F2F2</color>
+    <color name="orange_material">#ffb300</color>
+    <color name="dark_grey">#2C2C2C</color>
+    <color name="grey_light">#FF43555E</color>
+    <color name="material_grey">#e0e0e0</color>
+    <color name="white">#ffffff</color>
+    <color name="red_material">#F44336</color>
+    <color name="yellow_material">#ffd600</color>
+    <color name="blue_material">#0077CC</color>
+    <color name="blue_material_darker">#275AA2</color>
+    <color name="primary_black_text">#212121</color>
+    <color name="white_for_cards">#FBFBFB</color>
+    <color name="white_darker">#FAFAFA</color>
+    <color name="table_cell_transparent">#00E7E7E7</color>
+    <color name="red_material_trend">#99F44336</color>
+    <color name="blue_material_trend">#990077CC</color>
+</resources>

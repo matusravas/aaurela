@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?actionBarSize"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_view_nsoric"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/nsoric" />
+
+        <TextView
+            android:id="@+id/aaurela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="fill_horizontal"
+            android:text="@string/about_title"
+            android:textColor="@color/primary_black_text"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/text_view_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/app_version"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_view_signed_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/about_info_signed_as"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_view_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="@string/contact_us"
+            android:textColor="@color/blue_material"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

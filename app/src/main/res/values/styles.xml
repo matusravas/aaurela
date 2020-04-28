@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/primary_black_text</item>
+
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <!--<item name="android:button">@style/ButtonStyle</item>-->
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:dialogTheme">@style/Dialog</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <!--<item name="android:color">@color/primary_black_text</item>-->
+    </style>
+
+    <style name="Dialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="dialogCornerRadius">10dp</item>
+        <item name="android:background">?android:background</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <!--<item name="android:layout_marginStart">20dp</item>-->
+        <!--<item name="android:layout_marginEnd">20dp</item>-->
+    </style>
+
+    <!--<style name="DialogAlert" parent="AlertDialog.AppCompat">-->
+    <!--<item name="dialogCornerRadius">10dp</item>-->
+    <!--<item name="android:background">@color/yellow_deep_material</item>-->
+    <!--</style>-->
+
+    <!--<style name="ButtonStyle" parent="android:Widget.Button">-->
+    <!--<item name="android:fontFamily">sans-serif</item>-->
+    <!--<item name="android:elevation">8dp</item>-->
+    <!--&lt;!&ndash;<item name="android:textColor">@color/white</item>&ndash;&gt;-->
+    <!--<item name="android:background">@drawable/button_rounded</item>-->
+    <!--&lt;!&ndash;<item name="android:radius">20dp</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="android:padding">10dp</item>&ndash;&gt;-->
+    <!--</style>-->
+
+
+</resources>

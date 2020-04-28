@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_sensor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:id="@+id/sensor_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/text_view_sensor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sensor"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/text_view_sensor_name"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="500dp"
+            android:background="@color/material_grey" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_view_sensor_name"
+            android:layout_alignBottom="@id/text_view_sensor_name"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/text_view_sensor_name"
+            android:button="@drawable/checkbox_important"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/text_view_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_avg"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/last_measurement"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_view_measurement_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_measurement"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="20019"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_view_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="Average"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/text_view_average_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/text_view_avg"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/image_trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/text_view_sensor_value"
+            android:layout_alignBottom="@id/text_view_sensor_value"
+            android:layout_toStartOf="@id/text_view_sensor_value"
+            android:tooltipText="@string/trend_tooltip"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/text_view_sensor_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/view"
+            android:layout_alignBottom="@id/text_view_measurement_date_value"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="36dp"
+            android:gravity="center"
+            android:text="25 C"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
